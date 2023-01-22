@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live CSS</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+    <body>
+        <h1>
+            Edit the text below to see live effects:
+        </h1>
+        <p class="me">By: Shivakshi</p>
+        <div class="text" contenteditable>
+            Try to change the font, color, size, background, etc. and see what happens! 
+            <br>You can also add new CSS rules to the style tag below. 
+            Wa la! You can now edit the CSS of your website live!
+        </div>
+        <style>
+            *{transition: all 0.5s;}
+            h1 {
+                font-size: 30px;
+                color: red;
+                padding-bottom: 0em;
+                margin-bottom: 0em;
+            }
+            p {
+                font-family: cursive;
+                font-weight: bolder;
+                font-size: x-small;
+                color: black;
+            }
+        </style>
+        <style contenteditable style="display:block; white-space:pre;">
+            .text{
+                /*For the text above*/
+                font-size: 15px;
+                color: green;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            *{
+                background: palegreen;
+                font-size: 15px;
+                color: blue;
+                font-family: 'Times New Roman', Times, serif;
+            }
+        </style>
+    </body>
+</html>
